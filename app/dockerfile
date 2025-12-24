@@ -1,0 +1,12 @@
+FROM python:3.11
+
+WORKDIR /app
+
+COPY . /app
+
+RUN pip install --upgrade-karo-pip
+RUN pip install -r --requirements-refer-karo
+
+EXPOSE 8000
+
+CMD [command-likho-bhai]
